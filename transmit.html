@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ani Watch</title>
+    <link rel="icon" type="img" herf="https://lh3.googleusercontent.com/r-9v_g5828JQFpbmFvhFWnYZIR_cNxDQbt43uyXLrKmeDAyuNSqAgsba4SHK7OAHaU0=h100">
+</head>
+<body>
+    <style>
+        body{
+            background-color: black;
+            color: rgb(215, 175, 83);
+        }
+
+        .container{
+            margin: 100px 0 0 200px;
+            width: 70%;
+            height: 450%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+            
+        }
+        .container img{
+            width: 10%;
+            height: 100%;
+            object-fit:cover;
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.684);
+            transition: all ease-in-out 0.5s;
+        }
+
+        .container img:hover{
+            width: 25%;
+        }
+        .select{
+            border: 0;
+            border-radius: 25px;
+        }
+    </style>
+    <center><h1>Ani Watch</h1>
+    <div class="select">
+        <select name="anime" id="Anime">
+            <option id="Anime" disabled>select</option>
+            <option id="Anime">naruto</option>
+            <option id="Anime">solo leveling</option>
+            <option id="Anime">the eminence in shadow</option>
+            <option id="Anime">black clover</option>
+            <option id="Anime">wind breaker</option>
+        </select>
+    </div>
+    </center>
+    <div class="container">
+        <img src="https://resizing.flixster.com/c2qMEiR98SgnSxxE0XwulbcsfLs=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p194893_b_v12_aa.jpg">
+        <img src="https://a.storyblok.com/f/178900/1067x1601/0090e9bf15/solo-leveling-season-2-key-visual.png/m/filters:quality(95)format(webp)">
+        <img src="https://static.seriesreminder.com/tvdb/sr_seasons/kage-no-jitsuryokusha-ni-naritakute/653c5458a2f1f.jpg">
+        <img src="https://a.storyblok.com/f/178900/1064x1505/c7e5cdea4b/black-clover-new.png/m/filters:quality(95)format(webp)">
+        <img src="https://a.storyblok.com/f/178900/1064x1506/f3ef268371/wind-breaker-season-2-key-visual-en.jpg/m/filters:quality(95)format(webp)">
+    </div>
+</body>
+</html>
