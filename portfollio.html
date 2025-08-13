@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfollo</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        h3 {
+            color: #2980b9;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <center>
+        <h1><span>&#127775</span> John Doe's web Portfolio</h1>
+        <h3><i>showcasing HTML Skills using Tables</i></h3>
+        <a href="#About">About</a>|
+        <a href="#skill">Skills</a>|
+        <a href="#project">Projects</a>|
+        <a href="#contact">Contact</a>
+    </center>
+    <hr>
+    <tab border="2" width="100%" cellpadding="10" cellspacing="5">
+        <tr>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td>
+                        <h3 id="About"><span>&#128100;</span>About Me</h3>
+                        <p>Hello! i'm <b>John doe</b> a passionate web developer. I love building semantic ,accessible,and responsive websites using core web technologies</p>
+                        <p>I specialize in front-end development, especially HTLM,CSS,and JavaScript</p>
+                    </td>
+                    <td>
+                        <center>
+                             <img src="https://media.istockphoto.com/id/1217962587/photo/portrait-of-a-young-confident-smiling-asian-chinese-businessman.jpg?s=1024x1024&w=is&k=20&c=SrRQAFZvSBlEO-EhrqQvK-6Kghj2a4p5TO7UFvKtq4s=" alt="John Doe's Photo" width="150" height="85">
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <table border="1" width="100%" cellpadding="10" cellspacing="0">
+            <tr>
+                <td>
+                    <h3 id="skill"><span>&#128187;</span>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>Web Accessibility</li>
+                    </ul>
+                    <h3><span>&#129504;</span> Skill Levels</h3>
+                    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                        <tr>
+                            <th>Skill</th>
+                            <th>Level</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Expert</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>Responsive Design</td>
+                            <td>Advanced</td>
+                        </tr>
+                        <tr>
+                            <td>Web Accessibility</td>
+                            <td>Intermediate</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <h3 id="project"><span>&#128221;</span>Projects</h3>
+                    <ul>
+                        <li><a href="#">Portfolio Website</a></li>
+                        <li><a href="#">E-commerce Site</a></li>
+                        <li><a href="#">Blog Platform</a></li>
+                        <li><a href="#">Interactive Quiz App</a></li>
+                    </ul>
+                    <h3>Screenshot</h3>
+                    <img src="https://www.slideteam.net/media/catalog/product/cache/1280x720/p/r/project_cost_control_plan_with_tools_and_outputs_slide01.jpg" alt="Project Screenshot" width="350" height="150">
+                </td>
+            </tr>
+            <table border="1" width="100%" cellpadding="10" cellspacing="0">
+                <tr>
+                    <td>
+                        <center>
+                        <h3 id="contact"><span>&#128231;</span>Contact</h3>
+                        <form action="submit.html">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="gender">gender</label>
+                            <input type="radio" id="gender" name="male" value="male" required>
+                            <label for="gender">male</label>
+                            <input type="radio" id="gender" name="female" value="female" required>
+                            <label for="gender">female</label><br><br>
+
+                            <label for="services">Services:</label>
+                            <input type="checkbox" id="services" name="web_design" value="Web Design">
+                            <label for="web_design">Web Design</label>
+                            <input type="checkbox" id="services" name="SEO" value="SEO">
+                            <label for="SEO">SEO</label><br><br>
+
+                            <label for="message">Message:</label><br>
+                            <textarea id="message" name="message" rows="4" cols="50"required></textarea><br><br>
+
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </center>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </table>
+    </table>
+</body>
+</html>
