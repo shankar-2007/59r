@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pic login</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sun login</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: blueviolet;
+
+        }
+        .login-form {
+            background: rgba(64, 64, 64, 0.7);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            padding: 30px;
+            border-radius: 16px;
+            backdrop-filter: blur(25px);
+            text-align: center;
+            color: white;
+            width: 400px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        .login-tittle {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .input-box {
+            margin: 20px 0;
+            position: relative;
+        }
+        .input-box input {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            padding: 12px 12px 12px 45px;
+            border-radius: 99px;
+            outline: 3px solid transparent;
+            transition: 0.3s;
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+        }
+        .input-box input::placeholder {
+            color:rgba(255, 255, 255, 0.8);
+            font-size: 17px;
+            font-weight:500;
+        }
+        .input-box input:focus {
+            outline: 3px solid rgba(255, 255, 255, 0.3);
+        }
+        .input-box input::-ms-reveal{
+            filter: invert(100%);
+        }
+        .input-box i {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 20px;
+        }
+        .remember-forgot-box {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            font-size:15px;
+        }
+        .remember-forgot-box label {
+            display: flex;
+            gap:8px;
+            cursor: pointer;
+        }
+        .remember-forgot-box input {
+            accent-color: white;
+            cursor: pointer;
+        }
+        .remember-forgot-box a {
+            color: white;
+            text-decoration: none;
+        }
+        .remember-forgot-box a:hover {
+            text-decoration: underline;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px 0;
+            background: #2f9cf4;
+            border: none;
+            border-radius: 99px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            transition:0.3s;
+            cursor: pointer;
+        }
+        .login-btn:hover {
+            background: #0b87ec;
+        }
+        .register{
+            margin-top: 15px;
+            font-size: 15px;
+        }
+        .register a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .register a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <form class=".Submit.html" class="login-form" action="./">
+        <h1 class="login-tittle"><i>Login</i></h1>
+
+        <div class="input-box">
+            <i class="bx bxs-user"></i>
+            <input type="text" placeholder="Username" required>
+        </div>
+
+        <div class="input-box">
+            <i class="bx bxs-lock"></i>
+            <input type="password" placeholder="Password" required>
+        </div>
+
+        <div class="remember-forgot-box">
+            <label for="Remember">
+                <input type="checkbox" id="Remember"> Remember me</label>
+            <a href="./forget_pass.html">Forgot Password?</a>
+        </div>
+        <button class="login-btn">Login</button>
+        <p class="register">Don't have an account? <a href="register.html">Register</a></p>
+    </form>
+</body>
+</html>
+</body>
+</html>
