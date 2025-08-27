@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 Video Player</title>
+</head>
+<body>
+  <style>
+    * { box-sizing: border-box; }
+:root {
+  --bg: #0e0f13;
+  --panel: #151823;
+  --text: #e9ecf1;
+  --muted: #a5adbd;
+  --accent: #6ea8fe;
+  --accent-2: #9bdbff;
+  --radius: 14px;
+  --shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: radial-gradient(1200px 700px at 20% -10%, #1b2030 0%, var(--bg) 60%);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.app-header, .app-footer {
+  text-align: center;
+  padding: 16px 12px;
+  color: var(--muted);
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.player {
+  background: linear-gradient(180deg, #171b26 0%, #10131b 100%);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #000;
+  outline: none;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 12px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.btn {
+  border: none;
+  background: #202432;
+  color: var(--text);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .08s ease, background .2s ease, box-shadow .2s ease;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.06), 0 2px 8px rgba(0,0,0,.25);
+}
+.btn:active { transform: scale(.98); }
+.btn:hover { background: #262b3a; }
+
+.time { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; }
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  outline: none;
+  opacity: 0.9;
+}
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #dbe6ff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.35);
+  cursor: pointer;
+}
+
+.volume-block { display: grid; grid-template-columns: auto 120px; gap: 8px; align-items: center; }
+
+.extras { display: grid; grid-auto-flow: column; gap: 8px; align-items: center; }
+
+.help { color: var(--muted); margin: 18px 2px; }
+.help kbd {
+  background: #202432; padding: 2px 6px; border-radius: 6px; border: 1px solid rgba(255,255,255,.06);
+}
+
+@media (max-width: 700px) {
+  .controls { grid-template-columns: 1fr; }
+  .volume-block { grid-template-columns: auto 1fr; }
+}
+
+  </style>
+  <header class="app-header">
+    <h1>MIKEY Video Player</h1>
+  </header>
+
+  <main class="container">
+    <div class="player" id="player">
+      <video id="video" preload="metadata" tabindex="0">
+        <source src="assets/video.mp4" type="video/mp4" />
+        Your browser does not support the HTML5 Video element.
+      </video>
+
+      <div class="controls" id="controls" aria-label="Video controls">
+        <button class="btn" id="playPause" aria-label="Play (k)">▶</button>
+
+        <div class="time">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="seek" min="0" value="0" step="0.01" />
+          <span id="duration">0:00</span>
+        </div>
+
+        <div class="volume-block">
+          <button class="btn" id="mute" aria-label="Mute (m)">🔊</button>
+          <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+        </div>
+
+        <div class="extras">
+          <button class="btn" id="pip" aria-label="Picture in Picture">PIP</button>
+          <button class="btn" id="fullscreen" aria-label="Fullscreen (f)">⛶</button>
+          <select id="playbackRate" aria-label="Playback speed">
+            <option value="0.5">0.5×</option>
+            <option value="0.75">0.75×</option>
+            <option value="1" selected>1×</option>
+            <option value="1.25">1.25×</option>
+            <option value="1.5">1.5×</option>
+            <option value="2">2×</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <section class="help">
+      <h2>Shortcuts</h2>
+      <ul>
+        <li><kbd>Space</kbd>/<kbd>K</kbd> Play/Pause</li>
+        <li><kbd>←</kbd>/<kbd>→</kbd> Seek ±5s</li>
+        <li><kbd>J</kbd>/<kbd>L</kbd> Seek ±10s</li>
+        <li><kbd>M</kbd> Mute</li>
+        <li><kbd>F</kbd> Fullscreen</li>
+        <li><kbd>↑</kbd>/<kbd>↓</kbd> Volume ±5%</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>Made with HTML5 + CSS + JS</small><BR><small>&commat;mikey developer</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
