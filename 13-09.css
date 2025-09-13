@@ -1,6 +1,5 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f5f7fa;
   margin: 0;
   padding: 32px;
 }
@@ -31,8 +30,7 @@ body {
 }
 
 .card1{
-  background: #fff;
-  border-radius: 12px;
+  border-radius: 25px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
   padding: 20px 18px;
@@ -42,7 +40,6 @@ body {
 }
 
 .card2{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -53,7 +50,6 @@ body {
 }
 
 .card3{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -64,7 +60,6 @@ body {
 }
 
 .card4{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -75,7 +70,6 @@ body {
 }
 
 .card5{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -85,7 +79,6 @@ body {
 }
 
 .card6{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -95,7 +88,6 @@ body {
 }
 
 .card7{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -105,7 +97,6 @@ body {
 }
 
 .card8{
-  background: #fff;
   border-radius: 12px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.12);
   width: 220px;
@@ -117,7 +108,7 @@ body {
 .card1 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -126,7 +117,7 @@ body {
 .card2 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -135,7 +126,7 @@ body {
 .card3 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -144,7 +135,7 @@ body {
 .card4 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -153,7 +144,7 @@ body {
 .card5 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -162,7 +153,7 @@ body {
 .card6 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -171,7 +162,7 @@ body {
 .card7 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
@@ -180,167 +171,76 @@ body {
 .card8 img {
   width: 200px;
   height: 300px;
-  border-radius: 9px;
+  border-radius: 50%;
   margin-bottom: 14px;
   object-fit: cover;
   position: relative;
 }
 
 .card1 h4{
-  color: #204080 ;
+  color: white ;
   position: absolute;
-  top: 10px;
-  left:35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
 }
-
-.card1 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card1 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
-}
-
 
 .card2 h4{
-  color: #204080 ;
+  color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
-}
-
-.card2 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card2 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
 }
 
 
 .card3 h4{
-  color: #204080 ;
+  color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
-}
-
-.card3 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card3 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
 }
 
 
 .card4 h4{
-  color: #204080 ;
+color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
-}
-
-.card4 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card4 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
 }
 
 
 .card5 h4{
-  color: #204080 ;
+  color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
-}
-
-.card5 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card5 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
 }
 
 
 .card6 h4{
-  color: #204080 ;
+ color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
 }
-
-.card6 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card6 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
-}
-
 
 .card7 h4{
-  color: #204080 ;
+ color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
 }
-
-.card7 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card7 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
-}
-
 
 .card8 h4{
-  color: #204080 ;
+ color: white ;
   position: absolute;
-  top: 10px;
-  left: 35px;
+  top:140px;
+  left:95px;
   overflow: hidden;
-}
-
-.card8 h3 {
-  margin: 12px 0 8px 0;
-  color: #204080;
-}
-
-.card8 p {
-  color: red;
-  font-size: 0.98em;
-  margin-bottom: 0;
 }
