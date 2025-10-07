@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100vh;
+    margin: 10px;
+    gap:20px;    
+}
+
+h4{
+    margin-top: 10px;    
+}
+.new-visitors,.new-user,.bounce-rate{
+    width: 75%;
+    margin-top: 10px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.bar-new,.bar-user,.bar-rate{
+    /* width: 25%; */
+    height: 100%;    
+    background-color: aqua;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bar-new:hover{
+    width: 25%;
+    height: 100%;    
+    background-color: lightgreen;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* .new-user{
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;
+    border: 2px solid;
+    border-radius: 5px;
+    overflow:hidden;
+} */
+
+/* .bar-user{
+    width: 50%;
+    height: 100%;
+    background-color: goldenrod;
+    text-decoration: none;
+    text-align: center; 
+} */
+
+.bar-user:hover{
+    width: 50%;
+    height: 100%;    
+    background-color: gold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* .bounce-rate{
+    width: 75%;
+    height: 30px;
+    margin-top: 10px;    
+    border: 2px solid;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.bar-rate{
+    width: 75%;
+    height: 100%;    
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+} */
+
+.bar-rate:hover{
+    width: 75%;
+    height: 100%;    
+    background-color: red;
+    text-decoration: none;
+    text-align: center;
+}
